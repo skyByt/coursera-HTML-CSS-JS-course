@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px;
+    padding: 0px;
+    background-color:burlywood; /*http://lichfieldsfurniture.co.uk/cafe-background-2/ */
+    background-blend-mode: darken;
+    font-size: 125%;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+h1 {
+    color: black;
+    clear: left;
+    text-align: center;
+    margin: 80px;
+}
+
+.row {
+    width: 100;
+}
+
+.container {
+    border: 3px solid black;
+    border-bottom: 5%;
+    border-bottom-right-radius: 5%;
+    border-top-left-radius: 5%;
+    border-style:inset;
+    position: relative;
+    margin: 20px;
+    box-shadow: 5px; 
+    background-color: bisque;
+}
+
+.subtitle {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: 2px solid black;
+    border-top: 0px;
+    border-right: 0px;
+    padding: 5px 50px;
+    text-align: center;
+    font-size: 1/.25;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1/.75;
+    padding: 25px;
+}
+
+#sub1 {
+    background-color: aquamarine;
+}
+#sub2 {
+    background-color: coral;
+}
+#sub3 {
+    background-color: brown;
+}
+
+/**** Large devices ***/
+@media (min-width: 992px) {
+    .col-lg-01, .col-lg-02, .col-lg-03 {
+        width: 33.33%;
+        float: left;
+    }
+}
+
+/**** Medium devices ***/
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-01, .col-md-02 {
+        width: 50%;
+        float: left;
+    }
+    .col-md-03 {
+        width: 100%;
+        float: left;
+    }
+}
+
+/**** Small devices devices ***/
+@media (max-width: 767px) {
+    .col-sm-01, .col-sm-02, .col-sm-03 {
+        width: 100%;
+        float: left;
+    }
+}
